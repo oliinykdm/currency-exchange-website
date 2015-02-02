@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="obmennik" defaultIdMethod="native" namespace="Model" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xsd.propelorm.org/1.6/database.xsd">
+    <table name="users">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="role" type="integer" required="true" default="0" />
+        <column name="username" type="varchar" size="64" required="true" />
+        <index>
+            <index-column name="username" />
+        </index>
+        <column name="email" type="varchar" size="64" required="true" />
+		<column name="password" type="varchar" size="64" required="true" />
+        <unique>
+            <unique-column name="email" />
+        </unique>
+        <column name="wmid" type="varchar" size="64" required="true" />
+      <column name="registration_date" type="integer" />
+	  <column name="phone" type="varchar" size="15" />
+      <column name="birthday" type="date" />
+	  <column name="recover_key" type="varchar" size="64" required="true" />
+	          <unique>
+            <unique-column name="recover_key" />
+        </unique>
+    </table>
+	    <table name="users_prepare">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="username" type="varchar" size="64" required="true" />
+        <index>
+            <index-column name="username" />
+        </index>
+        <column name="email" type="varchar" size="64" required="true" />
+		<column name="password" type="varchar" size="64" required="true" />
+        <unique>
+            <unique-column name="email" />
+        </unique>
+		<column name="activation_code" type="varchar" size="64" required="true" />
+        <unique>
+            <unique-column name="activation_code" />
+        </unique>
+    </table>
+		 <table name="exchanges">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="userid" type="integer" required="true" default="0" />
+		<column name="surname" type="varchar" />
+		<column name="firstname" type="varchar" />
+		<column name="patronymic" type="varchar" />
+		<column name="email" type="varchar" />
+		<column name="phone" type="varchar" />
+        <column name="payment_details_from" type="varchar" size="64" required="true" />
+		<column name="payment_details_to" type="varchar" size="64" required="true" />
+        <column name="change_from_curr" type="varchar" size="64" required="true" />
+		<column name="change_to_curr" type="varchar" size="64" required="true" />
+	    <column name="change_from_amount" type="varchar" size="64" required="true" />
+		<column name="change_to_amount" type="varchar" size="64" required="true" />
+		<column name="exchange_date"  type="varchar" />
+		<column name="exchange_uniqid" type="varchar" />
+		<column name="exchange_status" type="varchar" />
+    </table>
+	 <table name="exchange_rates">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+		<column name="from"  type="varchar" />
+		<column name="to" type="varchar" />
+		<column name="value" type="varchar" />
+    </table>
+	<table name="settings">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+		<column name="name"  type="varchar" />
+		<column name="value"  type="varchar" />
+    </table>
+</database>

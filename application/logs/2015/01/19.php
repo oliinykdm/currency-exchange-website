@@ -1,0 +1,22 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+
+2015-01-19 17:23:06 --- EMERGENCY: Propel\Runtime\Connection\Exception\ConnectionException [ 0 ]: Unable to open connection ~ DOCROOT/vendor/propel/propel/src/Propel/Runtime/Connection/ConnectionFactory.php [ 43 ] in /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/Connection/ConnectionManagerSingle.php:76
+2015-01-19 17:23:06 --- DEBUG: #0 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/Connection/ConnectionManagerSingle.php(76): Propel\Runtime\Connection\ConnectionFactory::create(Array, Object(Propel\Runtime\Adapter\Pdo\MysqlAdapter))
+#1 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/ServiceContainer/StandardServiceContainer.php(345): Propel\Runtime\Connection\ConnectionManagerSingle->getWriteConnection(Object(Propel\Runtime\Adapter\Pdo\MysqlAdapter))
+#2 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/ServiceContainer/StandardServiceContainer.php(327): Propel\Runtime\ServiceContainer\StandardServiceContainer->getWriteConnection('obmennik')
+#3 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/Propel.php(204): Propel\Runtime\ServiceContainer\StandardServiceContainer->getConnection('obmennik', 'write')
+#4 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/application/classes/Database.php(29): Propel\Runtime\Propel::getConnection('obmennik')
+#5 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/application/classes/Database.php(19): Database::getConnection()
+#6 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/application/bootstrap.php(135): Database::init()
+#7 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/index.php(102): require('/home/d1man/dom...')
+#8 {main} in /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/Connection/ConnectionManagerSingle.php:76
+2015-01-19 17:23:07 --- EMERGENCY: Propel\Runtime\Connection\Exception\ConnectionException [ 0 ]: Unable to open connection ~ DOCROOT/vendor/propel/propel/src/Propel/Runtime/Connection/ConnectionFactory.php [ 43 ] in /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/Connection/ConnectionManagerSingle.php:76
+2015-01-19 17:23:07 --- DEBUG: #0 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/Connection/ConnectionManagerSingle.php(76): Propel\Runtime\Connection\ConnectionFactory::create(Array, Object(Propel\Runtime\Adapter\Pdo\MysqlAdapter))
+#1 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/ServiceContainer/StandardServiceContainer.php(345): Propel\Runtime\Connection\ConnectionManagerSingle->getWriteConnection(Object(Propel\Runtime\Adapter\Pdo\MysqlAdapter))
+#2 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/ServiceContainer/StandardServiceContainer.php(327): Propel\Runtime\ServiceContainer\StandardServiceContainer->getWriteConnection('obmennik')
+#3 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/Propel.php(204): Propel\Runtime\ServiceContainer\StandardServiceContainer->getConnection('obmennik', 'write')
+#4 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/application/classes/Database.php(29): Propel\Runtime\Propel::getConnection('obmennik')
+#5 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/application/classes/Database.php(19): Database::getConnection()
+#6 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/application/bootstrap.php(135): Database::init()
+#7 /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/index.php(102): require('/home/d1man/dom...')
+#8 {main} in /home/d1man/domains/dev.lab.dima.rv.ua/obmennik.dev.lab.dima.rv.ua/vendor/propel/propel/src/Propel/Runtime/Connection/ConnectionManagerSingle.php:76

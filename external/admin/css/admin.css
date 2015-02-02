@@ -1,0 +1,146 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic-ext,latin);
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.logo {
+  background: url('/external/images/admin/logo.png') no-repeat center;
+  width: 270px;
+  height: 60px;
+  display: inline-block;
+}
+.login-form {
+  padding: 50px;
+  border-radius: 10px;
+  width: 215px;
+  margin: 125px auto;
+  box-shadow: 0 0 120px rgba(0, 0, 0, 0.15);
+}
+.admin-wrapper {
+  width: 1280px;
+  min-height: 400px;
+  box-shadow: 0 0 120px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+.admin-wrapper .content {
+  padding: 30px;
+}
+.admin-wrapper .top-menu {
+  min-width: 1280px;
+  height: 60px;
+  vertical-align: middle;
+  border-bottom: 2px solid #ececec;
+}
+.admin-wrapper .items {
+  text-align: right;
+  float: right;
+  width: 900px;
+  vertical-align: top;
+  height: 60px;
+  display: inline-block;
+}
+.admin-wrapper .items .item {
+  line-height: 60px;
+  padding: 0 20px 0 20px;
+  display: inline-block;
+}
+.admin-wrapper .items .item:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+.admin-wrapper .items .active {
+  background-color: #eaeaea;
+}
+.admin-wrapper .controls {
+  width: 100%;
+  height: 50px;
+}
+.admin-wrapper .controls .right {
+  float: right;
+}
+.admin-wrapper .table-fullwidth {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 100;
+}
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-success {
+  background: #1cb841;
+}
+.button-error {
+  background: #ca3c3c;
+}
+.button-warning {
+  background: #df7514;
+}
+.button-secondary {
+  background: #42b8dd;
+}
+.white-popup-block {
+  background: #FFF;
+  padding: 10px 30px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto;
+  position: relative;
+}
+.my-mfp-slide-bottom .zoom-anim-dialog {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-transform: translateY(-20px) perspective(600px) rotateX(10deg);
+  -moz-transform: translateY(-20px) perspective(600px) rotateX(10deg);
+  -ms-transform: translateY(-20px) perspective(600px) rotateX(10deg);
+  -o-transform: translateY(-20px) perspective(600px) rotateX(10deg);
+  transform: translateY(-20px) perspective(600px) rotateX(10deg);
+}
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  -webkit-transform: translateY(0) perspective(600px) rotateX(0);
+  -moz-transform: translateY(0) perspective(600px) rotateX(0);
+  -ms-transform: translateY(0) perspective(600px) rotateX(0);
+  -o-transform: translateY(0) perspective(600px) rotateX(0);
+  transform: translateY(0) perspective(600px) rotateX(0);
+}
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+  opacity: 0;
+  -webkit-transform: translateY(-10px) perspective(600px) rotateX(10deg);
+  -moz-transform: translateY(-10px) perspective(600px) rotateX(10deg);
+  -ms-transform: translateY(-10px) perspective(600px) rotateX(10deg);
+  -o-transform: translateY(-10px) perspective(600px) rotateX(10deg);
+  transform: translateY(-10px) perspective(600px) rotateX(10deg);
+}
+.my-mfp-slide-bottom.mfp-bg {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+.js-pagination {
+  margin: 15px auto;
+  text-align: center;
+}
