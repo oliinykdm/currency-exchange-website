@@ -1,6 +1,6 @@
 # WMZOBMEN
-Дамп БД - папка sql.
-Propel (schema.xml) - tasks/obmennik/
+* Дамп БД - папка sql.
+* Propel (schema.xml) - tasks/obmennik/
 
 # Оновлення даних для Propel
 1. Змінюєш структуру БД в schema.xml.
