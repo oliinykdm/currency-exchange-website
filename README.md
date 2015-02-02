@@ -11,7 +11,11 @@
 7. Копіювати весь вміст tasks/obmennik/generated-classes/Model в папку фреймворка application/classes/Model (перед копіюванням краще очистити всю папку).
 8. Profit.
 
-# LESS -> File watchers PHPStorm
-* File -> Settings -> Tools -> File Watchers. Додати новий, формат LESS. 
+# LESS
+* Качати node.js (http://nodejs.org/)
+* Win + S
+* Ввести в пошуку: node.js command prompt 
+* В консолі ввести: npm install -g less
+* Відкрити PHPStorm -> File -> Settings -> Tools -> File Watchers. Додати новий, формат LESS. 
 * Program: ШЛЯХ\npm\lessc.cmd
 * Output paths to refresh: ..\css\$FileNameWithoutExtension$.css
