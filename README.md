@@ -12,6 +12,6 @@ Propel (schema.xml) - tasks/obmennik/
 8. Profit.
 
 # LESS -> File watchers PHPStorm
-File -> Settings -> Tools -> File Watchers. Додати новий, формат LESS. 
-Program: ШЛЯХ\npm\lessc.cmd
-Output paths to refresh: ..\css\$FileNameWithoutExtension$.css
+* File -> Settings -> Tools -> File Watchers. Додати новий, формат LESS. 
+* Program: ШЛЯХ\npm\lessc.cmd
+* Output paths to refresh: ..\css\$FileNameWithoutExtension$.css
