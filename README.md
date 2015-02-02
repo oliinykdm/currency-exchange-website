@@ -10,6 +10,7 @@
 6. ..\..\vendor\bin\propel sql:build (для побудови структури БД, .sql-файл).
 7. Копіювати весь вміст tasks/obmennik/generated-classes/Model в папку фреймворка application/classes/Model (перед копіюванням краще очистити всю папку).
 8. Profit.
+9. Документація по C.R.U.D.: http://propelorm.org/documentation/03-basic-crud.html
 
 # LESS
 * Качати node.js (http://nodejs.org/)
@@ -19,3 +20,4 @@
 * Відкрити PHPStorm -> File -> Settings -> Tools -> File Watchers. Додати новий, формат LESS. 
 * Program: ШЛЯХ\npm\lessc.cmd
 * Output paths to refresh: ..\css\$FileNameWithoutExtension$.css
+* Повна документація: http://lesscss.org/features/
